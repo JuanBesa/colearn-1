@@ -13,14 +13,14 @@
         <meta name="author" content="developer@fetch.ai">
       
       
-        <link rel="canonical" href="https://docs.fetch.ai/examples/">
+        <link rel="canonical" href="https://docs.fetch.ai/grpc_examples/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
     
     
       
-        <title>Standalone examples - colearn</title>
+        <title>gRPC example - colearn</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#examples-that-use-collective-learning" class="md-skip">
+        <a href="#mnist-grpc-example" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Standalone examples
+              gRPC example
             
           </span>
         </div>
@@ -368,6 +368,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Standalone examples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -379,80 +391,10 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Standalone examples
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Standalone examples
-      </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mnist" class="md-nav__link">
-    Mnist
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fraud" class="md-nav__link">
-    Fraud
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cifar10" class="md-nav__link">
-    Cifar10
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#xray" class="md-nav__link">
-    Xray
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iris" class="md-nav__link">
-    Iris
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../grpc_examples/" class="md-nav__link">
         gRPC example
       </a>
+      
     </li>
   
 
@@ -482,49 +424,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mnist" class="md-nav__link">
-    Mnist
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fraud" class="md-nav__link">
-    Fraud
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cifar10" class="md-nav__link">
-    Cifar10
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#xray" class="md-nav__link">
-    Xray
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iris" class="md-nav__link">
-    Iris
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -535,60 +434,24 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/fetchai/colearn/edit/master/docs/examples.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/fetchai/colearn/edit/master/docs/grpc_examples.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="examples-that-use-collective-learning">Examples that use Collective Learning<a class="headerlink" href="#examples-that-use-collective-learning" title="Permanent link">&para;</a></h1>
-<p>This is a list of examples that we've implemented to show you how to use Collective Learning locally. See and example of
-the <a href="../grpc_examples/">gRPC server</a> for the next step towards decentralized Colearn. </p>
-<h3 id="mnist">Mnist<a class="headerlink" href="#mnist" title="Permanent link">&para;</a></h3>
-<p>Uses the standard <a href="https://en.wikipedia.org/wiki/MNIST_database">Mnist</a> database of handwritten images</p>
-<ul>
-<li><a href="https://github.com/fetchai/colearn/tree/master//colearn_examples/ml_interface/keras_mnist.py">mnist_keras</a>. 
-  Uses the <code>KerasLearner</code> helper class. 
-  Discussed in more detail <a href="../intro_tutorial_keras/">here</a>.</li>
-<li><a href="https://github.com/fetchai/colearn/tree/master//colearn_examples/ml_interface/pytorch_mnist.py">mnist_pytorch</a>. 
-  Uses the <code>PytorchLearner</code> helper class. 
-  Discussed in more detail <a href="../intro_tutorial_pytorch/">here</a>.</li>
-</ul>
-<h3 id="fraud">Fraud<a class="headerlink" href="#fraud" title="Permanent link">&para;</a></h3>
-<p>The fraud dataset consists of information about credit card transactions. 
-  The task is to predict whether transactions are fraudulent or not.
-  The data needs to be downloaded from <a href="https://www.kaggle.com/c/ieee-fraud-detection">Kaggle</a>, 
-  and the data directory passed in with the flag <code>--data_dir</code>. </p>
-<ul>
-<li><a href="https://github.com/fetchai/colearn/tree/master//colearn_examples/ml_interface/mli_fraud.py">fraud_mli</a>.
-  Uses the <code>MachineLearningInterface</code> directly and detects fraud in bank transactions.</li>
-<li><a href="https://github.com/fetchai/colearn/tree/master//colearn_examples/ml_interface/keras_fraud.py">fraud_keras</a>. 
-  Loads data from numpy arrays and uses <code>KerasLearner</code>.</li>
-</ul>
-<h3 id="cifar10">Cifar10<a class="headerlink" href="#cifar10" title="Permanent link">&para;</a></h3>
-<p>Uses the standard <a href="https://en.wikipedia.org/wiki/CIFAR-10">Cifar10</a> database of images</p>
-<ul>
-<li><a href="https://github.com/fetchai/colearn/tree/master//colearn_examples/ml_interface/keras_cifar.py">cifar_keras</a>. 
-  Uses the <code>KerasLearner</code> helper class.</li>
-<li><a href="https://github.com/fetchai/colearn/tree/master//colearn_examples/ml_interface/pytorch_cifar.py">cifar_pytorch</a>.
-  Uses the <code>PytorchLearner</code> helper class.</li>
-</ul>
-<h3 id="xray">Xray<a class="headerlink" href="#xray" title="Permanent link">&para;</a></h3>
-<p>A binary classification task that requires predicting pneumonia from images of chest X-rays. 
-  The data need to be downloaded from <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">Kaggle</a>, 
-  and the data directory passed in with the flag <code>--data_dir</code></p>
-<ul>
-<li><a href="https://github.com/fetchai/colearn/tree/master//colearn_examples/ml_interface/keras_xray.py">xray_keras</a>. 
-  Uses the <code>KerasLearner</code> helper class.</li>
-<li><a href="https://github.com/fetchai/colearn/tree/master//colearn_examples/ml_interface/pytorch_xray.py">xray_pytorch</a>. 
-  Uses the <code>PytorchLearner</code> helper class.</li>
-</ul>
-<h3 id="iris">Iris<a class="headerlink" href="#iris" title="Permanent link">&para;</a></h3>
-<p>Uses the standard Iris dataset. 
-The aim of this task is to classify examples into one of three iris species based on measurements of the flower.</p>
-<ul>
-<li><a href="https://github.com/fetchai/colearn/tree/master//colearn_examples/ml_interface/mli_random_forest_iris.py">iris_random_forest</a>. 
-  Uses the <code>MachineLearningInterface</code> directly and a random forest for classification.</li>
-</ul>
+                <h1 id="mnist-grpc-example">Mnist gRPC Example<a class="headerlink" href="#mnist-grpc-example" title="Permanent link">&para;</a></h1>
+<p>To run the Keras Mnist gRPC example run:</p>
+<div class="highlight"><pre><span></span><code>python -m colearn_examples.grpc.run_grpc_demo --n_learners <span class="m">5</span> --dataloader_tag KERAS_MNIST --model_tag KERAS_MNIST <span class="se">\</span>
+--data_locations /tmp/mnist/0,/tmp/mnist/1,/tmp/mnist/2,/tmp/mnist/3,/tmp/mnist/4
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This requires <code>colearn[keras]</code></p>
+</div>
+<p>You can verify that the example is working correctly by running the probe:</p>
+<div class="highlight"><pre><span></span><code>python -m colearn_grpc.scripts.probe_grpc_server --port <span class="m">9995</span>
+</code></pre></div>
+<p>For more about the gRPC components of Colearn see the <a href="../grpc_tutorial/">gRPC Tutorial</a></p>
                 
               
               
@@ -607,7 +470,7 @@ The aim of this task is to classify examples into one of three iris species base
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../demo/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../examples/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -616,25 +479,11 @@ The aim of this task is to classify examples into one of three iris species base
               <span class="md-footer__direction">
                 Previous
               </span>
-              Demo
+              Standalone examples
             </div>
           </div>
         </a>
       
-      
-        <a href="../grpc_examples/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              gRPC example
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
